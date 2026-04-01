@@ -13,7 +13,7 @@ html {
 /* ================= BASE ================= */
 body {
     background-color: #f8f9fa; /* gris muy claro */
-    color: #1f2937; /* gris oscuro suave */
+    color: #111827; /* negro suave, para no saturar */
     line-height: 1.6;
 }
 
@@ -29,13 +29,13 @@ nav {
     padding: 20px 0;
     position: fixed;
     width: 100%;
-    background-color: rgba(248, 250, 252, 0.95);
+    background-color: rgba(248, 249, 250, 0.95);
     z-index: 100;
     transition: 0.3s;
 }
 
 nav.scrolled {
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
 .nav-links li {
@@ -44,7 +44,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-    color: #1f2937;
+    color: #111827;
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -54,7 +54,7 @@ nav.scrolled {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #60a5fa; /* celeste */
+    background-color: #3b82f6; /* celeste vibrante */
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -94,7 +94,7 @@ nav.scrolled {
 
 .hero-title .italic {
     font-style: italic;
-    color: #60a5fa; /* celeste */
+    color: #3b82f6; /* celeste */
 }
 
 .hero-sub {
@@ -104,7 +104,7 @@ nav.scrolled {
 
 .btn-primary {
     display: inline-block;
-    background-color: #60a5fa;
+    background-color: #3b82f6; /* celeste más vibrante */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -114,7 +114,7 @@ nav.scrolled {
 }
 
 .btn-primary:hover {
-    background-color: #3b82f6; /* celeste más intenso */
+    background-color: #2563eb; /* celeste más intenso */
 }
 
 /* ================= ABOUT ================= */
@@ -124,7 +124,7 @@ nav.scrolled {
 
 .section-label {
     font-weight: 500;
-    color: #60a5fa;
+    color: #3b82f6; /* celeste */
     margin-bottom: 10px;
 }
 
@@ -158,8 +158,8 @@ nav.scrolled {
 }
 
 .tab-btn.active {
-    color: #60a5fa;
-    border-bottom: 2px solid #60a5fa;
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
 }
 
 .tab-panel {
@@ -174,7 +174,7 @@ nav.scrolled {
 /* ── SKILL ITEM ── */
 .skill-item {
     background-color: #ffffff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d1d5db; /* gris suave */
     border-radius: 10px;
     padding: 15px 20px;
     margin-bottom: 15px;
@@ -182,7 +182,7 @@ nav.scrolled {
 
 .skill-tag {
     font-weight: 600;
-    color: #60a5fa;
+    color: #3b82f6;
     margin-bottom: 8px;
 }
 
@@ -199,20 +199,21 @@ nav.scrolled {
 
 .service-card {
     background: #ffffff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d1d5db;
     padding: 25px;
     border-radius: 12px;
     transition: 0.3s;
 }
 
 .service-card:hover {
-    border: 1px solid #60a5fa;
+    border: 1px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .service-tags span {
     display: inline-block;
-    background-color: #e0f2fe;
-    color: #0284c7;
+    background-color: #dbeafe; /* celeste muy claro */
+    color: #1e40af; /* azul oscuro */
     padding: 4px 10px;
     border-radius: 5px;
     margin-right: 5px;
@@ -232,7 +233,7 @@ nav.scrolled {
 
 .project-card {
     background: #ffffff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d1d5db;
     border-radius: 12px;
     padding: 20px;
     text-decoration: none;
@@ -242,13 +243,14 @@ nav.scrolled {
 }
 
 .project-card:hover {
-    border: 1px solid #60a5fa;
+    border: 1px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .project-tags span {
     display: inline-block;
-    background-color: #e0f2fe;
-    color: #0284c7;
+    background-color: #dbeafe;
+    color: #1e40af;
     padding: 4px 8px;
     border-radius: 5px;
     margin-right: 5px;
@@ -260,7 +262,7 @@ nav.scrolled {
     right: 20px;
     bottom: 20px;
     font-size: 18px;
-    color: #60a5fa;
+    color: #3b82f6;
 }
 
 /* ================= CONTACT ================= */
@@ -269,14 +271,14 @@ nav.scrolled {
 }
 
 .social-icons a {
-    color: #1f2937;
+    color: #111827;
     margin-right: 10px;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: #60a5fa;
+    color: #3b82f6;
 }
 
 /* ================= FOOTER ================= */
