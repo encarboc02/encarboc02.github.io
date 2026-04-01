@@ -79,7 +79,7 @@ section {
 
 /* ===================== HERO + SOBRE MÍ ===================== */
 .hero-about-section {
-    padding: 3rem 1rem; /* menos espacio para unir secciones */
+    padding: 3rem 1rem; /* espacio reducido para unir secciones */
     text-align: center;
     background-color: var(--bg);
 }
@@ -90,10 +90,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.hero-about-container .hero-image img {
+/* FOTO */
+.hero-image img {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -102,26 +103,16 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.hero-badge {
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
-}
-
-.hero-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
+/* SUBHEADER */
+.hero-subheader {
+    font-weight: 500;
     font-size: 1rem;
+    color: var(--accent);
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
-/* Sobre mí */
+/* SOBRE MÍ */
 .hero-about-section h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -138,6 +129,12 @@ section {
     line-height: 1.5;
 }
 
+/* TEXTO FINAL / APASIONADO POR */
+.hero-badge {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1rem;
+}
 /* ===================== SKILLS / QUÉ HAGO ===================== */
 .about-grid {
     display: grid;
