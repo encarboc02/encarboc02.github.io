@@ -1,3 +1,4 @@
+/* ===================== VARIABLES ===================== */
 :root {
     --bg: #f5f7fa;
     --text: #1b1b1b;
@@ -8,41 +9,228 @@
     --container: 1200px;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; font-family:'Instrument Sans', sans-serif; }
+/* ===================== RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Sans', sans-serif;
+}
 
-body { background: var(--bg); color: var(--text); line-height:1.6; }
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
 
-.container { max-width: var(--container); margin: 0 auto; padding: var(--padding); }
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: var(--padding);
+}
 
-nav { background:#fff; padding:1rem 0; box-shadow:0 2px 5px rgba(0,0,0,0.05); position:sticky; top:0; z-index:100; }
-.nav-inner { display:flex; align-items:center; justify-content:space-between; max-width:var(--container); margin:0 auto; }
-.nav-links { list-style:none; display:flex; gap:2rem; }
-.nav-links a { text-decoration:none; color: var(--text); font-weight:500; }
-.nav-cta { background: var(--accent); color:#fff; padding:0.5rem 1rem; border-radius: var(--radius); text-decoration:none; transition:0.3s; }
-.nav-cta:hover { background: var(--secondary); }
+/* ===================== NAVBAR ===================== */
+nav {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-section { padding:5rem 0; }
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container);
+    margin: 0 auto;
+}
 
-.hero-content { text-align:center; max-width:900px; margin:0 auto; padding:0 2rem; }
-.hero-title { font-family:'DM Serif Display', serif; font-size:3rem; margin:2rem 0; }
-.hero-title .italic { font-style:italic; }
-.btn-primary { display:inline-block; margin-top:1rem; background:var(--accent); color:#fff; padding:0.75rem 1.5rem; border-radius: var(--radius); text-decoration:none; transition:0.3s; }
-.btn-primary:hover { background:var(--secondary); }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
 
-.about-photo img { width:200px; height:200px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 2rem; }
-.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; margin-top:2rem; }
-.about-tabs .tab-nav { display:flex; gap:1rem; margin-bottom:1rem; }
-.tab-btn { padding:0.5rem 1rem; border:none; background:#ddd; border-radius:var(--radius); cursor:pointer; transition:0.3s; }
-.tab-btn.active { background:var(--accent); color:#fff; }
-.tab-panel { display:none; }
-.tab-panel.active { display:block; }
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
 
-.services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
-.service-card { background:#fff; padding:2rem; border-radius:var(--radius); box-shadow:0 4px 15px rgba(0,0,0,0.05); transition:0.3s; }
-.service-card:hover { transform:translateY(-5px); }
+.nav-cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-.projects-list { display:grid; gap:2rem; }
-.project-card { background:#fff; padding:2rem; border-radius:var(--radius); box-shadow:0 4px 15px rgba(0,0,0,0.05); transition:0.3s; }
-.project-card:hover { transform:translateY(-5px); }
+.nav-cta:hover {
+    background: var(--secondary);
+}
 
-footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
+/* ===================== SECCIONES ===================== */
+section {
+    padding: 5rem 0;
+}
+
+/* ===================== HERO + SOBRE MÍ ===================== */
+.hero-about-section {
+    padding: 3rem 1rem; /* menos espacio para unir secciones */
+    text-align: center;
+    background-color: var(--bg);
+}
+
+.hero-about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-about-container .hero-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero-badge {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Sobre mí */
+.hero-about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-about-section p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+/* ===================== SKILLS / QUÉ HAGO ===================== */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===================== TABS ===================== */
+.about-tabs .tab-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #ddd;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: var(--accent);
+    color: #fff;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* ===================== PROYECTOS ===================== */
+.projects-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===================== BOTONES ===================== */
+.btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
