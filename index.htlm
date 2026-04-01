@@ -152,7 +152,6 @@
         <h2 class="section-title">Áreas de<br><em>especialización.</em></h2>
         <div class="services-grid">
             <div class="service-card" data-num="01">
-                <div class="service-icon">🧬</div>
                 <h3>Bioinformática</h3>
                 <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos. Pipelines reproducibles, integración multi-ómica.</p>
                 <div class="service-tags">
@@ -160,15 +159,13 @@
                 </div>
             </div>
             <div class="service-card" data-num="02">
-                <div class="service-icon">📊</div>
                 <h3>Data Analytics & BI</h3>
-                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma. Del dato crudo a la historia que importa.</p>
+                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma.</p>
                 <div class="service-tags">
                     <span>Power BI</span><span>SQL</span><span>Python</span>
                 </div>
             </div>
             <div class="service-card" data-num="03">
-                <div class="service-icon">🤖</div>
                 <h3>IA aplicada a salud</h3>
                 <p>Modelos predictivos y machine learning para descubrimiento de fármacos, farmacovigilancia y soporte a decisiones clínicas.</p>
                 <div class="service-tags">
@@ -179,62 +176,68 @@
     </div>
 </section>
 
-<!-- SERVICES -->
-<div id="Services">
-    <div class="container">
-        <h1 class="sub-title">Qué hago</h1>
-
-        <div class="services-list">
-            <div>
-                <h2>Bioinformática</h2>
-                <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos.</p>
-            </div>
-
-            <div>
-                <h2>Data Analytics & BI</h2>
-                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma.</p>
-            </div>
-
-            <div>
-                <h2>IA aplicada</h2>
-                <p>Modelos predictivos y machine learning para descubrimiento de fármacos.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- PORTFOLIO -->
-<div id="portfolio">
+<section id="portfolio">
     <div class="container">
-        <h1 class="sub-title">Proyectos</h1>
+        <div class="section-label">/ proyectos</div>
+        <h2 class="section-title">Trabajo<br><em>seleccionado.</em></h2>
+        <div class="projects-list">
 
-        <div class="work-list">
-            <div class="work">
-                <div class="layer">
-                    <h3>Drug Repositioning</h3>
-                    <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos.</p>
-                    <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer">GitHub</a>
+            <!-- Proyecto 1 -->
+            <a href="https://github.com/encarboc02/Web-Application-for-Drug-Screening-using-ChEMBL-and-Streamlit" class="project-card" target="_blank">
+                <div class="project-num">01</div>
+                <div class="project-body">
+                    <h3>Aplicación Web para Cribado de Fármacos</h3>
+                    <p>Desarrollo de una herramienta para asistir a investigadores en las etapas iniciales del descubrimiento de fármacos, consultando dianas terapéuticas y analizando descriptores fisicoquímicos.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Streamlit</span><span>RDKit</span><span>ChEMBL API</span>
+                    </div>
                 </div>
-            </div>
+                <div class="project-arrow">↗</div>
+            </a>
 
-            <div class="work">
-                <div class="layer">
+            <!-- Proyecto 2 -->
+            <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer" class="project-card" target="_blank">
+                <div class="project-num">02</div>
+                <div class="project-body">
+                    <h3>Drug Repositioning Pipeline</h3>
+                    <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos. Identificación de fármacos candidatos mediante análisis de redes y expresión génica diferencial.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>R</span><span>Multi-ómica</span><span>Redes biológicas</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+            <!-- Proyecto 3 -->
+            <a href="https://github.com/encarboc02/Clinical_Trials_BI" class="project-card" target="_blank">
+                <div class="project-num">03</div>
+                <div class="project-body">
                     <h3>Clinical Trials BI</h3>
-                    <p>Análisis global de ensayos clínicos con dashboard en Power BI.</p>
-                    <a href="https://github.com/encarboc02/Clinical_Trials_BI">GitHub</a>
+                    <p>Análisis global de ensayos clínicos con dashboard interactivo en Power BI. Visualización de tendencias, fases y áreas terapéuticas a escala mundial.</p>
+                    <div class="project-tags">
+                        <span>Power BI</span><span>SQL</span><span>Data Viz</span><span>Pharma</span>
+                    </div>
                 </div>
-            </div>
+                <div class="project-arrow">↗</div>
+            </a>
 
-            <div class="work">
-                <div class="layer">
-                    <h3>FAERS Analysis</h3>
-                    <p>Detección de señales de seguridad en medicamentos usando ML.</p>
-                    <a href="https://github.com/encarboc02/Self_learning_projects">GitHub</a>
+            <!-- Proyecto 4 -->
+            <a href="https://github.com/encarboc02/Self_learning_projects" class="project-card" target="_blank">
+                <div class="project-num">04</div>
+                <div class="project-body">
+                    <h3>Analysis of Adverse Drug Reactions of Ozempic</h3>
+                    <p>Análisis de reacciones adversas de medicamentos usando ML sobre la base de datos FAERS de la FDA. Automatización del proceso de detección de señales de seguridad.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>ML</span><span>FAERS</span><span>Farmacovigilancia</span>
+                    </div>
                 </div>
-            </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
         </div>
     </div>
-</div>
+</section>
 
 <!-- CONTACT -->
 <div id="contact">
@@ -251,7 +254,7 @@
 </div>
 
 <div class="copyright">
-    <p>© Enrique Carnerero | Bioinformatics & Data</p>
+    <p>© Enrique Carnerero Bocanegra | Data Analyst & BI en Pharma | Transformo datos complejos en resultados para la toma de decisiones | Python, R, Power BI</p>
 </div>
 
 <script src="index.js"></script>
