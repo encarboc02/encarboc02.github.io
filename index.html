@@ -1,172 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enrique Carnerero - Data Analyst & BI en Pharma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrique Carnerero - Bioinformática & Data Analytics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600&family=DM+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav id="navbar">
     <div class="nav-inner">
-        <a href="#hero" class="nav-logo">ECB</a>
+        <a href="#hero" class="nav-logo"><img src="foto-perfil.jpg" alt="Enrique Carnerero"></a>
         <ul class="nav-links">
             <li><a href="#hero">Inicio</a></li>
-            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Qué hago</a></li>
             <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
-        <a href="#contact" class="nav-cta">Contactar →</a>
+        <a href="mailto:enriquecarnererobocanegra@gmail.com" class="nav-cta">Hablemos →</a>
+        <div class="nav-toggle"><span></span><span></span><span></span></div>
     </div>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
-    <div class="container hero-centered">
-        <div class="hero-image-wrapper">
-            <img src="Foto linkedin.jpg" alt="Enrique Carnerero Bocanegra" class="hero-img-main">
-        </div>
-        <h1 class="hero-title">Enrique Carnerero Bocanegra</h1>
-        <p class="hero-tagline">Data Analyst & BI en Pharma | Transformo datos complejos en resultados para la toma de decisiones | Python, R, Power BI</p>
+    <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span> Apasionado por los datos, biología y negocio</div>
+        <h1 class="hero-title">
+            <span class="line">Bioinformática</span>
+            <span class="line italic">& Data Analytics</span>
+            <span class="line">para la industria sanitaria</span>
+        </h1>
+        <p class="hero-sub">
+            Soy <strong>Enrique Carnerero</strong> — biotecnólogo y bioinformático. Actualmente disfruto aprendiendo mientras desarrollo proyectos en bioinformática, análisis de datos y business intelligence, además de trabajar en aplicaciones de IA en salud.
+        </p>
+        <a href="#contact" class="btn-primary">Si quieres saber sobre mí, contáctame</a>
     </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-    <div class="container about-grid">
-        <div class="about-info">
-            <div class="section-label">/ sobre mí</div>
-            <h2 class="section-title">Donde la biología <em>se vuelve dato.</em></h2>
-            <p>Soy biotecnólogo y bioinformático enfocado en transformar datos biomédicos en insights estratégicos que impulsen la toma de decisiones y generen valor de negocio en healthcare.</p>
-            <p>Actualmente curso un Máster en Medicina Personalizada y Farmacogenómica y un MBA en Industria Farmacéutica. Tengo experiencia en análisis de datos, integración de información e IA aplicada con R, Python y SQL. Mi perfil es analítico, orientado a resultados y capaz de traducir necesidades de negocio en soluciones basadas en datos.</p>
-            <p class="hero-interests">Interesado en áreas como Consultoría, BI, Data Analyst, Data Entry, Bioinformática y AI en Industria sanitaria/biotech.</p>
+    <div class="container">
+        <div class="section-label">/ sobre mí</div>
+        <div class="about-photo">
+            <img src="foto-perfil.jpg" alt="Enrique Carnerero">
         </div>
-
-        <div class="about-tabs">
-            <div class="tab-nav">
-                <button class="tab-btn active" data-tab="skills">Skills</button>
-                <button class="tab-btn" data-tab="education">Educación</button>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title">Donde la biología<br><em>se vuelve dato.</em></h2>
+                <p>Soy biotecnólogo y bioinformático enfocado en transformar datos biomédicos en insights estratégicos que generen valor de negocio en healthcare.</p>
+                <p>Actualmente curso un Máster en Medicina Personalizada y Farmacogenómica y un MBA en Industria Farmacéutica. Experiencia en R, Python, SQL, integración multi-ómica, dashboards y IA aplicada.</p>
             </div>
-
-            <div id="skills" class="tab-panel active">
-                <div class="skill-item">
-                    <div class="skill-tag">Technical Skills</div>
-                    <p>Python, R, SQL, Power BI, Machine Learning, RNA-Seq, Integración multi-ómica, Dashboards analíticos, IA aplicada a salud</p>
+            <div class="about-tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="skills">Skills</button>
+                    <button class="tab-btn" data-tab="education">Educación</button>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-tag">Soft Skills</div>
-                    <p>Perfil analítico, Orientación a resultados, Comunicación efectiva, Resolución de problemas, Traducción de necesidades de negocio a soluciones basadas en datos</p>
+                <div class="tab-panel active" id="skills">
+                    <p>Python, R, SQL, Power BI, ML, RNA-Seq, Integración multi-ómica, Dashboards, IA aplicada a salud</p>
                 </div>
-            </div>
-
-            <div id="education" class="tab-panel">
-                <div class="edu-item">
-                    <strong>MBA Industria Farmacéutica</strong>
-                    <span>Bioempower Leaders (En curso)</span>
-                </div>
-                <div class="edu-item">
-                    <strong>MSc Medicina Personalizada y Farmacogenómica</strong>
-                    <span>Duponte (En curso)</span>
-                </div>
-                <div class="edu-item">
-                    <strong>MSc Bioinformática</strong>
-                    <span>UNIR (2024 - 2025)</span>
-                </div>
-                <div class="edu-item">
-                    <strong>Grado en Biotecnología</strong>
-                    <span>Universidad Pablo de Olavide</span>
+                <div class="tab-panel" id="education">
+                    <p>MBA Industria Farmacéutica | Máster Medicina Personalizada | Máster Bioinformática | Grado Biotecnología</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
     <div class="container">
         <div class="section-label">/ qué hago</div>
-        <h2 class="section-title">Áreas de <em>especialización.</em></h2>
+        <h2 class="section-title">Áreas de<br><em>especialización.</em></h2>
         <div class="services-grid">
             <div class="service-card">
                 <h3>Bioinformática</h3>
-                <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos. Pipelines reproducibles.</p>
-                <div class="card-tags"><span>RNA-Seq</span><span>Python</span><span>R</span></div>
+                <p>Análisis genómico y transcriptómico, pipelines reproducibles e integración multi-ómica.</p>
             </div>
             <div class="service-card">
                 <h3>Data Analytics & BI</h3>
-                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma.</p>
-                <div class="card-tags"><span>Power BI</span><span>SQL</span><span>Python</span></div>
+                <p>Transformación de datos en dashboards y decisiones estratégicas en salud y pharma.</p>
             </div>
             <div class="service-card">
                 <h3>IA aplicada a salud</h3>
-                <p>Modelos predictivos para descubrimiento de fármacos, farmacovigilancia y soporte clínico.</p>
-                <div class="card-tags"><span>ML</span><span>Azure AI</span><span>Scikit-learn</span></div>
+                <p>Modelos predictivos y machine learning para descubrimiento de fármacos y soporte a decisiones clínicas.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- PORTFOLIO -->
 <section id="portfolio">
     <div class="container">
         <div class="section-label">/ proyectos</div>
-        <h2 class="section-title">Trabajo <em>seleccionado.</em></h2>
-        <div class="projects-vertical">
-            <a href="https://github.com/encarboc02/Web-Application-for-Drug-Screening-using-ChEMBL-and-Streamlit" class="project-item" target="_blank">
-                <span class="p-num">01</span>
-                <div class="p-content">
-                    <h3>Aplicación Web para Cribado de Fármacos</h3>
-                    <p>Herramienta para asistir a investigadores en las etapas iniciales del descubrimiento de fármacos.</p>
-                    <div class="p-tags">Python · Streamlit · RDKit · ChEMBL API</div>
-                </div>
-                <span class="p-arrow">↗</span>
-            </a>
-            <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer" class="project-item" target="_blank">
-                <span class="p-num">02</span>
-                <div class="p-content">
-                    <h3>Drug Repositioning Pipeline</h3>
-                    <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos e identificación de candidatos.</p>
-                    <div class="p-tags">Python · R · Multi-ómica · Redes biológicas</div>
-                </div>
-                <span class="p-arrow">↗</span>
-            </a>
-            <a href="https://github.com/encarboc02/Clinical_Trials_BI" class="project-item" target="_blank">
-                <span class="p-num">03</span>
-                <div class="p-content">
-                    <h3>Clinical Trials BI</h3>
-                    <p>Análisis global de ensayos clínicos con dashboard interactivo. Tendencias y áreas terapéuticas.</p>
-                    <div class="p-tags">Power BI · SQL · Data Viz · Pharma</div>
-                </div>
-                <span class="p-arrow">↗</span>
-            </a>
-            <a href="#" class="project-item">
-                <span class="p-num">04</span>
-                <div class="p-content">
-                    <h3>Adverse Drug Reactions (Ozempic)</h3>
-                    <p>Análisis de reacciones adversas usando ML sobre base de datos FAERS de la FDA.</p>
-                    <div class="p-tags">Python · ML · FAERS · Farmacovigilancia</div>
-                </div>
-                <span class="p-arrow">↗</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <div class="section-label">/ contacto</div>
-        <h2 class="section-title">Hablemos.</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:enriquecarnererobocanegra@gmail.com">enriquecarnererobocanegra@gmail.com</a></p>
-            <p>Teléfono: +34 633 604 467</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/enrique-carnerero/" target="_blank">LinkedIn</a>
-                <span class="sep">|</span>
-                <a href="https://github.com/encarboc02" target="_blank">GitHub</a>
+        <h2 class="section-title">Trabajo<br><em>seleccionado.</em></h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <h3>Aplicación Web para Cribado de Fármacos</h3>
+                <p>Herramienta para investigadores, consultando dianas terapéuticas y analizando descriptores fisicoquímicos.</p>
+            </div>
+            <div class="project-card">
+                <h3>Drug Repositioning Pipeline</h3>
+                <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos y expresión génica diferencial.</p>
+            </div>
+            <div class="project-card">
+                <h3>Clinical Trials BI</h3>
+                <p>Dashboard interactivo de ensayos clínicos: tendencias, fases y áreas terapéuticas.</p>
             </div>
         </div>
     </div>
 </section>
 
-<script src="index.js"></script>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p>Email: enriquecarnererobocanegra@gmail.com</p>
+        <p>Teléfono: +34 633 604 467</p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/enrique-carnerero">LinkedIn</a> |
+            <a href="https://github.com/encarboc02">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© Enrique Carnerero Bocanegra | Data Analyst & BI en Pharma</p>
+</footer>
+
 </body>
 </html>
