@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrique Carnerero Bocanegra - Data Analyst & BI en Pharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <!-- Imagen como logo -->
+        <a href="#hero" class="nav-logo">
+            <img src="Foto linkedin.jpg" alt="Enrique Carnerero Bocanegra" />
+        </a>
+
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Qué hago</a></li>
+            <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de contacto -->
+        <a href="mailto:enriquecarnererobocanegra@gmail.com" class="nav-cta">Hablemos →</a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+  
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Apasionado por los datos, biología y negocio</span>
+        </div>
+
+        <h1 class="hero-title">
+            <span class="line">Bioinformática</span>
+            <span class="line italic">& Data Analytics</span>
+            <span class="line">para la industria sanitaria</span>
+        </h1>
+
+        <p class="hero-sub">
+            Soy <strong>Enrique Carnerero</strong> — biotecnólogo y bioinformático. Actualmente disfruto aprendiendo continuamente mientras desarrollo proyectos en bioinformática, análisis de datos y business intelligence, además de trabajar en aplicaciones de IA en salud.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+                Si quieres saber sobre mí, no dudes en ponerte en contacto
+            </a>
+        </div>
+
+        <p class="hero-interests">
+            Interesado en áreas como Consultoría, BI, Data Analyst, Data Entry, Bioinformática y AI en Industria sanitaria/biotech
+        </p>
+    </div>
+
+    <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="section-label">/ sobre mí</div>
+        <div class="about-grid">
+            <!-- Texto principal -->
+            <div class="about-text">
+                <h2 class="section-title">Donde la biología<br><em>se vuelve dato.</em></h2>
+                <p>
+                    Soy biotecnólogo y bioinformático enfocado en transformar datos biomédicos en insights estratégicos que impulsen la toma de decisiones y generen valor de negocio en healthcare.
+                </p>
+                <p>
+                    Actualmente curso un Máster en Medicina Personalizada y Farmacogenómica y un MBA en Industria Farmacéutica. Tengo experiencia en análisis de datos, integración de información e IA aplicada con R, Python y SQL. Mi perfil es analítico, orientado a resultados y capaz de traducir necesidades de negocio en soluciones basadas en datos.
+                </p>
+                <p>
+                    Interesado en áreas como Consultoría, BI, Data Analyst, Data Entry, Bioinformática y AI en Industria sanitaria/biotech.
+                </p>
+            </div>
+
+            <!-- Tabs de Skills y Educación -->
+            <div class="about-tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="skills">Skills</button>
+                    <button class="tab-btn" data-tab="education">Educación</button>
+                </div>
+
+                <!-- Skills -->
+                <div class="tab-panel active" id="skills">
+                    <!-- Technical Skills -->
+                    <div class="skill-item">
+                        <div class="skill-tag">Technical Skills</div>
+                        <p>Python, R, SQL, Power BI, Machine Learning, RNA-Seq, Integración multi-ómica, Dashboards analíticos, IA aplicada a salud</p>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="skill-item">
+                        <div class="skill-tag">Soft Skills</div>
+                        <p>Perfil analítico, Orientación a resultados, Comunicación efectiva, Resolución de problemas, Traducción de necesidades de negocio a soluciones basadas en datos</p>
+                    </div>
+                </div>
+
+                <!-- Educación -->
+                <div class="tab-panel" id="education">
+                    <div class="skill-item">
+                        <div class="skill-tag">MBA en Industria Farmacéutica</div>
+                        <p>Bioempower Leaders — 02/26 - Actualidad</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-tag">Máster en Medicina Personalizada y Farmacogenómica</div>
+                        <p>Duponte — 12/25 - Actualidad</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-tag">Máster en Bioinformática</div>
+                        <p>Universidad Internacional de La Rioja — 09/24 - 10/25</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-tag">Grado en Biotecnología</div>
+                        <p>Universidad Pablo de Olavide — 09/2020 - 06/2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="section-label">/ qué hago</div>
+        <h2 class="section-title">Áreas de<br><em>especialización.</em></h2>
+        <div class="services-grid">
+            <div class="service-card" data-num="01">
+                <div class="service-icon">🧬</div>
+                <h3>Bioinformática</h3>
+                <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos. Pipelines reproducibles, integración multi-ómica.</p>
+                <div class="service-tags">
+                    <span>RNA-Seq</span><span>Python</span><span>R</span>
+                </div>
+            </div>
+            <div class="service-card" data-num="02">
+                <div class="service-icon">📊</div>
+                <h3>Data Analytics & BI</h3>
+                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma. Del dato crudo a la historia que importa.</p>
+                <div class="service-tags">
+                    <span>Power BI</span><span>SQL</span><span>Python</span>
+                </div>
+            </div>
+            <div class="service-card" data-num="03">
+                <div class="service-icon">🤖</div>
+                <h3>IA aplicada a salud</h3>
+                <p>Modelos predictivos y machine learning para descubrimiento de fármacos, farmacovigilancia y soporte a decisiones clínicas.</p>
+                <div class="service-tags">
+                    <span>ML</span><span>Azure AI</span><span>Scikit-learn</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">Qué hago</h1>
+
+        <div class="services-list">
+            <div>
+                <h2>Bioinformática</h2>
+                <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos.</p>
+            </div>
+
+            <div>
+                <h2>Data Analytics & BI</h2>
+                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma.</p>
+            </div>
+
+            <div>
+                <h2>IA aplicada</h2>
+                <p>Modelos predictivos y machine learning para descubrimiento de fármacos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Proyectos</h1>
+
+        <div class="work-list">
+            <div class="work">
+                <div class="layer">
+                    <h3>Drug Repositioning</h3>
+                    <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos.</p>
+                    <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer">GitHub</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="layer">
+                    <h3>Clinical Trials BI</h3>
+                    <p>Análisis global de ensayos clínicos con dashboard en Power BI.</p>
+                    <a href="https://github.com/encarboc02/Clinical_Trials_BI">GitHub</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="layer">
+                    <h3>FAERS Analysis</h3>
+                    <p>Detección de señales de seguridad en medicamentos usando ML.</p>
+                    <a href="https://github.com/encarboc02/Self_learning_projects">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contacto</h1>
+        <p>Email: enriquecarnererobocanegra@gmail.com</p>
+        <p>Teléfono: +34 633 604 467</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/enrique-carnerero/">LinkedIn</a> |
+            <a href="https://github.com/encarboc02">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>© Enrique Carnerero | Bioinformatics & Data</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
