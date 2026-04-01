@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enrique Carnerero - Bioinformática & Data Analytics</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrique Carnerero Bocanegra - Data Analyst & BI en Pharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ===================== NAVBAR ===================== -->
-<nav id="navbar" class="navbar">
-    <ul>
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Qué hago</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-    </ul>
+  <!-- NAV -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo">Enrique Carnerero</a>
+
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Qué hago</a></li>
+            <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de contacto -->
+        <a href="mailto:enriquecarnererobocanegra@gmail.com" class="nav-cta">Hablemos →</a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </nav>
 
-<!-- ===================== HERO / SOBRE MÍ ===================== -->
-<section id="hero" class="hero-about-section">
-    <div class="container hero-about-container">
+<!-- HERO / SOBRE MÍ -->
+<section id="hero">
+    <div class="hero-about-container">
 
         <!-- FOTO -->
         <div class="hero-image">
@@ -33,82 +52,180 @@
             Data Analyst & BI en Pharma | Transformo datos complejos en resultados para la toma de decisiones | Python, R, Power BI
         </p>
 
-        <!-- SOBRE MÍ -->
-        <h2>Sobre mí</h2>
-        <p class="about-title">Enrique Carnerero</p>
+        <!-- SOBRE MÍ PRINCIPAL -->
+        <h2 class="section-title">Donde la biología<br><em>se vuelve dato.</em></h2>
         <p>
-            Donde la biología se vuelve dato. Soy biotecnólogo y bioinformático enfocado en transformar datos biomédicos en insights estratégicos que generen valor de negocio en healthcare.
+            Soy <strong>Enrique Carnerero</strong> — biotecnólogo y bioinformático enfocado en transformar datos biomédicos en insights estratégicos que impulsen la toma de decisiones y generen valor de negocio en healthcare.
         </p>
         <p>
             Actualmente curso un Máster en Medicina Personalizada y Farmacogenómica y un MBA en Industria Farmacéutica. Experiencia en R, Python, SQL, integración multi-ómica, dashboards y IA aplicada.
         </p>
 
-        <!-- TEXTO FINAL / APASIONADO POR -->
-        <p class="hero-badge" style="margin-top: 2rem;">
+        <!-- TEXTO FINAL -->
+        <p class="hero-badge">
             Apasionado por los datos, biología y negocio
         </p>
+
     </div>
 </section>
 
-<!-- ===================== QUÉ HAGO ===================== -->
-<section id="skills" class="section">
+<!-- ABOUT / SKILLS -->
+<section id="about">
     <div class="container">
-        <h2>Qué hago</h2>
-        <div class="skills-group">
-            <div class="skill">
+        <div class="about-tabs">
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="skills">Skills</button>
+                <button class="tab-btn" data-tab="education">Educación</button>
+            </div>
+
+            <!-- Skills -->
+            <div class="tab-panel active" id="skills">
+                <div class="skill-item">
+                    <div class="skill-tag">Technical Skills</div>
+                    <p>Python, R, SQL, Power BI, Machine Learning, RNA-Seq, Integración multi-ómica, Dashboards analíticos, IA aplicada a salud</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-tag">Soft Skills</div>
+                    <p>Perfil analítico, Orientación a resultados, Comunicación efectiva, Resolución de problemas, Traducción de necesidades de negocio a soluciones basadas en datos</p>
+                </div>
+            </div>
+
+            <!-- Educación -->
+            <div class="tab-panel" id="education">
+                <div class="skill-item">
+                    <div class="skill-tag">MBA en Industria Farmacéutica</div>
+                    <p>Bioempower Leaders — 02/26 - Actualidad</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-tag">Máster en Medicina Personalizada y Farmacogenómica</div>
+                    <p>Duponte — 12/25 - Actualidad</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-tag">Máster en Bioinformática</div>
+                    <p>Universidad Internacional de La Rioja — 09/24 - 10/25</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-tag">Grado en Biotecnología</div>
+                    <p>Universidad Pablo de Olavide — 09/2020 - 06/2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="section-label">/ qué hago</div>
+        <h2 class="section-title">Áreas de<br><em>especialización.</em></h2>
+        <div class="services-grid">
+            <div class="service-card" data-num="01">
                 <h3>Bioinformática</h3>
-                <p>Análisis genómico y transcriptómico, pipelines reproducibles e integración multi-ómica.</p>
+                <p>Análisis de datos genómicos y transcriptómicos para entender enfermedades y tratamientos. Pipelines reproducibles, integración multi-ómica.</p>
+                <div class="service-tags">
+                    <span>RNA-Seq</span><span>Python</span><span>R</span>
+                </div>
             </div>
-            <div class="skill">
+            <div class="service-card" data-num="02">
                 <h3>Data Analytics & BI</h3>
-                <p>Transformación de datos en dashboards y decisiones estratégicas en salud y pharma.</p>
+                <p>Transformo datos en dashboards y decisiones estratégicas en salud y pharma.</p>
+                <div class="service-tags">
+                    <span>Power BI</span><span>SQL</span><span>Python</span>
+                </div>
             </div>
-            <div class="skill">
+            <div class="service-card" data-num="03">
                 <h3>IA aplicada a salud</h3>
-                <p>Modelos predictivos y machine learning para descubrimiento de fármacos y soporte a decisiones clínicas.</p>
+                <p>Modelos predictivos y machine learning para descubrimiento de fármacos, farmacovigilancia y soporte a decisiones clínicas.</p>
+                <div class="service-tags">
+                    <span>ML</span><span>Azure AI</span><span>Scikit-learn</span>
+                </div>
             </div>
         </div>
-        <p><strong>Skills:</strong> Python, R, SQL, Power BI, ML, RNA-Seq, Integración multi-ómica, Dashboards, IA aplicada a salud</p>
     </div>
 </section>
 
-<!-- ===================== PROYECTOS ===================== -->
-<section id="projects" class="section">
+<!-- PORTFOLIO -->
+<section id="portfolio">
     <div class="container">
-        <h2>Proyectos</h2>
+        <div class="section-label">/ proyectos</div>
+        <h2 class="section-title">Trabajo<br><em>seleccionado.</em></h2>
         <div class="projects-list">
-            <div class="project">
-                <h3>Aplicación Web para Cribado de Fármacos</h3>
-                <p>Herramienta para investigadores, consultando dianas terapéuticas y analizando descriptores fisicoquímicos.</p>
-            </div>
-            <div class="project">
-                <h3>Drug Repositioning Pipeline</h3>
-                <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos y expresión génica diferencial.</p>
-            </div>
-            <div class="project">
-                <h3>Clinical Trials BI</h3>
-                <p>Dashboard interactivo de ensayos clínicos: tendencias, fases y áreas terapéuticas.</p>
-            </div>
+
+            <!-- Proyecto 1 -->
+            <a href="https://github.com/encarboc02/Web-Application-for-Drug-Screening-using-ChEMBL-and-Streamlit" class="project-card" target="_blank">
+                <div class="project-num">01</div>
+                <div class="project-body">
+                    <h3>Aplicación Web para Cribado de Fármacos</h3>
+                    <p>Herramienta para investigadores consultando dianas terapéuticas y analizando descriptores fisicoquímicos.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Streamlit</span><span>RDKit</span><span>ChEMBL API</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+            <!-- Proyecto 2 -->
+            <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer" class="project-card" target="_blank">
+                <div class="project-num">02</div>
+                <div class="project-body">
+                    <h3>Drug Repositioning Pipeline</h3>
+                    <p>Pipeline bioinformático para cáncer de páncreas integrando datos multi-ómicos y expresión génica diferencial.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>R</span><span>Multi-ómica</span><span>Redes biológicas</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+            <!-- Proyecto 3 -->
+            <a href="https://github.com/encarboc02/Clinical_Trials_BI" class="project-card" target="_blank">
+                <div class="project-num">03</div>
+                <div class="project-body">
+                    <h3>Clinical Trials BI</h3>
+                    <p>Dashboard interactivo de ensayos clínicos: tendencias, fases y áreas terapéuticas.</p>
+                    <div class="project-tags">
+                        <span>Power BI</span><span>SQL</span><span>Data Viz</span><span>Pharma</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+            <!-- Proyecto 4 -->
+            <a href="https://github.com/encarboc02/Self_learning_projects" class="project-card" target="_blank">
+                <div class="project-num">04</div>
+                <div class="project-body">
+                    <h3>Analysis of Adverse Drug Reactions of Ozempic</h3>
+                    <p>Análisis de reacciones adversas de medicamentos usando ML sobre la base de datos FAERS.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>ML</span><span>FAERS</span><span>Farmacovigilancia</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
         </div>
     </div>
 </section>
 
-<!-- ===================== CONTACTO ===================== -->
-<section id="contact" class="section">
+<!-- CONTACT -->
+<section id="contact">
     <div class="container">
-        <h2>Contacto</h2>
+        <h1 class="sub-title">Contacto</h1>
         <p>Email: <a href="mailto:enriquecarnererobocanegra@gmail.com">enriquecarnererobocanegra@gmail.com</a></p>
         <p>Teléfono: +34 633 604 467</p>
-        <p>
-            <a href="https://www.linkedin.com/in/enriquecarnerero" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/enriquecarnerero" target="_blank">GitHub</a>
-        </p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/enrique-carnerero/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/encarboc02" target="_blank">GitHub</a>
+        </div>
     </div>
 </section>
 
-<script src="script.js"></script>
-</body>
-</html>
+<!-- COPYRIGHT -->
+<footer>
+    <p>© Enrique Carnerero Bocanegra | Data Analyst & BI en Pharma | Transformo datos complejos en resultados para la toma de decisiones | Python, R, Power BI</p>
+</footer>
 
+<script src="index.js"></script>
 </body>
 </html>
