@@ -477,8 +477,8 @@ nav {
  
 /* ── CONTACT ── */
 #contact {
-    background: var(#081F3F);
-    color: var(#FFFFFF);
+    background: #081F3F;
+    color: #FFFFFF;
     padding: 100px 48px;
 }
 #contact .inner {
@@ -523,7 +523,7 @@ nav {
 }
 .contact-item a, .contact-item span {
     font-size: 1rem;
-    color: var(--bg);
+    color: var(--ink);
     text-decoration: none;
     transition: color 0.2s;
 }
