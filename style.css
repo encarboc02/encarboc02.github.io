@@ -33,6 +33,7 @@ body {
     z-index: 9999;
     mix-blend-mode: multiply;
 }
+
 .cursor-dot {
     position: fixed;
     width: 6px; height: 6px;
