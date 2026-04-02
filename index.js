@@ -1,32 +1,52 @@
-// Tabs
-const tabButtons = document.querySelectorAll('.tab-btn');
-const tabPanels = document.querySelectorAll('.tab-panel');
-
-tabButtons.forEach(btn => {
+// ── CURSOR PERSONALIZADO ──
+const ring = document.getElementById('cursorRing');
+const dot = document.getElementById('cursorDot');
+document.addEventListener('mousemove', e => {
+    ring.style.left = e.clientX + 'px';
+    ring.style.top = e.clientY + 'px';
+    dot.style.left = e.clientX + 'px';
+    dot.style.top = e.clientY + 'px';
+});
+ 
+// ── TABS ──
+document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        tabButtons.forEach(b => b.classList.remove('active'));
-        tabPanels.forEach(p => p.classList.remove('active'));
+        const panel = btn.dataset.tab;
+        btn.closest('.tabs-card').querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.closest('.tabs-card').querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
-        document.getElementById(btn.dataset.tab).classList.add('active');
+        document.getElementById(panel).classList.add('active');
     });
 });
-
-// Smooth scroll
+ 
+// ── MENÚ HAMBURGUESA (móvil) ──
+const toggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+ 
+// ── SMOOTH SCROLL ──
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
-        e.preventDefault();
         const target = document.querySelector(anchor.getAttribute('href'));
-        if(target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+        if (target) {
+            e.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 72, behavior: 'smooth' });
+        }
     });
 });
-
-// Custom cursor
-const cursor = document.querySelector('.cursor');
-const cursorDot = document.querySelector('.cursor-dot');
-
-document.addEventListener('mousemove', e => {
-    cursor.style.top = e.clientY + 'px';
-    cursor.style.left = e.clientX + 'px';
-    cursorDot.style.top = e.clientY + 'px';
-    cursorDot.style.left = e.clientX + 'px';
+ 
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+ 
+document.querySelectorAll('.service-card, .project-card').forEach(el => {
+    observer.observe(el);
 });
