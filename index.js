@@ -1,13 +1,3 @@
-// ── CURSOR PERSONALIZADO ──
-const ring = document.getElementById('cursorRing');
-const dot = document.getElementById('cursorDot');
-document.addEventListener('mousemove', e => {
-    ring.style.left = e.clientX + 'px';
-    ring.style.top = e.clientY + 'px';
-    dot.style.left = e.clientX + 'px';
-    dot.style.top = e.clientY + 'px';
-});
- 
 // ── TABS ──
 document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
