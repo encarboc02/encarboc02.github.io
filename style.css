@@ -1,14 +1,14 @@
 :root {
-    --bg: #F7F4EF;
-    --surface: #EDEAE3;
-    --ink: #1A1814;
-    --ink-muted: #6B6760;
-    --accent: #2B5741;
-    --accent-light: #4A8C6A;
-    --accent-pale: #D6E8DE;
-    --line: rgba(26,24,20,0.1);
-    --card-bg: #FFFFFF;
-    --tag-bg: #E8E4DC;
+    --bg: #0B1F3A;
+    --surface: #102A4C;
+    --ink: #FFFFFF;
+    --ink-muted: #A8B3C7;
+    --accent: #2F80ED;
+    --accent-light: #5FA8FF;
+    --accent-pale: #162F57;
+    --line: rgba(255,255,255,0.08);
+    --card-bg: #122B4A;
+    --tag-bg: #1A3A66;
 }
  
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -54,7 +54,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(247,244,239,0.88);
+    background: rgba(11, 31, 58, 0.85);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--line);
     transition: background 0.3s;
@@ -477,8 +477,8 @@ nav {
  
 /* ── CONTACT ── */
 #contact {
-    background: var(--ink);
-    color: var(--bg);
+    background: var(#081F3F);
+    color: var(#FFFFFF);
     padding: 100px 48px;
 }
 #contact .inner {
@@ -496,7 +496,7 @@ nav {
 #contact .section-title em { color: var(--accent-light); }
  
 .contact-subtitle {
-    color: rgba(247,244,239,0.55);
+    color: rgba(255,255,255,0.6);
     font-size: 0.9rem;
     line-height: 1.75;
     max-width: 360px;
@@ -519,7 +519,7 @@ nav {
     font-size: 0.65rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(247,244,239,0.4);
+    color: rgba(255,255,255,0.5);
 }
 .contact-item a, .contact-item span {
     font-size: 1rem;
@@ -531,7 +531,7 @@ nav {
  
 /* ── FOOTER ── */
 footer {
-    background: #0E0D0A;
+    background: #08172A;
     padding: 28px 48px;
     display: flex;
     align-items: center;
