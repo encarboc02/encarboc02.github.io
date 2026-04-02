@@ -492,7 +492,7 @@ nav {
  
 #contact .section-label { color: var(--accent-light); }
 #contact .section-label::after { background: var(--accent-light); }
-#contact .section-title { color: var(--bg); margin-bottom: 0; }
+#contact .section-title { color: var(--ink); margin-bottom: 0; }
 #contact .section-title em { color: var(--accent-light); }
  
 .contact-subtitle {
@@ -523,7 +523,7 @@ nav {
 }
 .contact-item a, .contact-item span {
     font-size: 1rem;
-    color: var(--ink);
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.2s;
 }
