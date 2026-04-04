@@ -241,3 +241,37 @@ footer .footer-text { font-size: 0.72rem; line-height: 1.4; }
     #contact .inner { grid-template-columns: 1fr; gap: 48px; }
     footer { flex-direction: column; align-items: flex-start; padding: 24px; }
 }
+/* ── OVERRIDE TODO BLANCO ── */
+body, body * {
+    color: #FFFFFF !important;
+}
+
+a, a * {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.interest-chip:hover {
+    background: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary, .btn-primary:hover,
+.btn-secondary, .btn-secondary:hover {
+    color: #FFFFFF !important;
+    background: #0B1F3A !important; /* azul de tu bg */
+    border-color: #FFFFFF !important;
+}
+
+footer, footer a, footer a * {
+    color: #FFFFFF !important;
+}
+
+#contact, #contact * {
+    color: #FFFFFF !important;
+}
+
+/* hover y focus de links */
+a:hover, a:focus {
+    color: #FFFFFF !important;
+}
