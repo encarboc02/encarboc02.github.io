@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Enrique Carnerero Bocanegra — Data Analyst & Bioinformático. Biotecnólogo especializado en datos biomédicos, BI pharma y bioinformática." />
     <title>Enrique Carnerero Bocanegra — Data Analyst & Bioinformático</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +10,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- CURSOR PERSONALIZADO -->
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="cursor-dot" id="cursorDot"></div>
-
+ 
 <!-- NAV -->
 <nav id="navbar">
     <a href="#hero" class="nav-logo">Enrique Carnerero Bocanegra</a>
@@ -25,17 +20,17 @@
         <li><a href="#portfolio">Proyectos</a></li>
         <li><a href="#contact">Contacto</a></li>
     </ul>
-    <div class="nav-toggle" id="navToggle" aria-label="Abrir menú" role="button" tabindex="0">
+    <div class="nav-toggle" id="navToggle">
         <span></span><span></span><span></span>
     </div>
 </nav>
-
+ 
 <!-- HERO + SOBRE MÍ -->
 <section id="hero">
     <div class="hero-left">
         <div class="hero-eyebrow">
             <span class="eyebrow-line"></span>
-            Apasionado por los Datos, Salud y Negocio
+            Apasionado por lo Datos, Salud y Negocio
         </div>
         <p class="hero-bio">
             Soy <strong>Enrique Carnerero Bocanegra</strong>, biotecnólogo y bioinformático especializado en transformar datos biomédicos en insights estratégicos. Actualmente curso un <strong>Máster en Medicina Personalizada y Farmacogenómica</strong> y un <strong>MBA en Industria Farmacéutica</strong>.
@@ -53,22 +48,21 @@
         </div>
         <div class="hero-actions">
             <a href="#portfolio" class="btn-secondary">Ver proyectos</a>
-            <a href="mailto:enriquecarnererobocanegra@gmail.com" class="btn-primary">Contactar</a>
         </div>
     </div>
-
+ 
     <div class="hero-right">
         <div class="profile-photo-wrap">
             <img src="Foto linkedin.jpg" alt="Enrique Carnerero Bocanegra" class="profile-photo"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="profile-photo-placeholder" style="display:none;">ECB</div>
+            <div class="profile-photo-placeholder" style="display:none;">Foto CV</div>
         </div>
         <div class="tabs-card">
-            <div class="tab-nav" role="tablist">
-                <button class="tab-btn active" data-tab="skills" role="tab" aria-selected="true">Skills</button>
-                <button class="tab-btn" data-tab="education" role="tab" aria-selected="false">Educación</button>
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="skills">Skills</button>
+                <button class="tab-btn" data-tab="education">Educación</button>
             </div>
-            <div class="tab-panel active" id="skills" role="tabpanel">
+            <div class="tab-panel active" id="skills">
                 <div class="skill-item">
                     <div class="skill-tag">Lenguajes &amp; Herramientas</div>
                     <p>Python | R | SQL | Power BI | Streamlit | RMarkdown</p>
@@ -87,10 +81,10 @@
                 </div>
                 <div class="skill-item">
                     <div class="skill-tag">Soft Skills</div>
-                    <p>Orientación a resultados & KPIs | Comunicación efectiva | Trabajo en Equipo | Adaptabilidad y aprendizaje rápido</p>
+                    <p>Orientación a resultados & KPIs | Comunicación efectiva | Trabajo en Equipo | Adaptabilidad y capacidad de aprendizaje rápido</p>
                 </div>
             </div>
-            <div class="tab-panel" id="education" role="tabpanel">
+            <div class="tab-panel" id="education">
                 <div class="skill-item">
                     <div class="skill-tag">MBA en Industria Farmacéutica</div>
                     <p>Bioempower Leaders</p>
@@ -115,9 +109,9 @@
         </div>
     </div>
 </section>
-
+ 
 <div class="full-divider"></div>
-
+ 
 <!-- QUÉ HAGO -->
 <div id="services">
     <div class="section-wrapper">
@@ -145,17 +139,17 @@
         </div>
     </div>
 </div>
-
+ 
 <div class="full-divider"></div>
-
+ 
 <!-- PROYECTOS -->
 <div id="portfolio">
     <div class="section-wrapper">
         <div class="section-label">/ proyectos</div>
         <h2 class="section-title">Trabajo<br><em>realizados.</em></h2>
         <div class="projects-list">
-
-            <a href="https://github.com/encarboc02/Self_learning_projects" class="project-card" target="_blank" rel="noopener noreferrer">
+ 
+            <a href="https://github.com/encarboc02/Self_learning_projects" class="project-card" target="_blank" rel="noopener">
                 <div class="project-num">01</div>
                 <div class="project-body">
                     <h3>Análisis de reacciones adversas a Ozempic</h3>
@@ -164,8 +158,8 @@
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
-
-            <a href="https://github.com/encarboc02/Clinical_Trials_BI" class="project-card" target="_blank" rel="noopener noreferrer">
+ 
+            <a href="https://github.com/encarboc02/Clinical_Trials_BI" class="project-card" target="_blank" rel="noopener">
                 <div class="project-num">02</div>
                 <div class="project-body">
                     <h3>Clinical Trials BI — Ensayos clínicos con Python y Power BI</h3>
@@ -174,8 +168,8 @@
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
-
-            <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer" class="project-card" target="_blank" rel="noopener noreferrer">
+ 
+            <a href="https://github.com/encarboc02/Drug-repurposing-for-pancreatic-cancer" class="project-card" target="_blank" rel="noopener">
                 <div class="project-num">03</div>
                 <div class="project-body">
                     <h3>Pipeline para análisis de expresión génica diferencial</h3>
@@ -184,21 +178,21 @@
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
-
-            <a href="https://github.com/encarboc02/Web-Application-for-Drug-Screening-using-ChEMBL-and-Streamlit" class="project-card" target="_blank" rel="noopener noreferrer">
+ 
+            <a href="https://github.com/encarboc02/Web-Application-for-Drug-Screening-using-ChEMBL-and-Streamlit" class="project-card" target="_blank" rel="noopener">
                 <div class="project-num">04</div>
                 <div class="project-body">
                     <h3>Aplicación web para cribado de fármacos — TFG</h3>
-                    <p>Proyecto de Fin de Grado en Biotecnología. Herramienta web para asistir a investigadores en las etapas iniciales del descubrimiento de fármacos: consulta de dianas terapéuticas en ChEMBL y análisis de descriptores fisicoquímicos (regla de Lipinski). Diseñada para reducir el tiempo y los costes en las fases iniciales de I+D farmacéutica.</p>
+                    <p>Proyecto de fin de Grado en Biotecnología. Herramienta web para asistir a investigadores en las etapas iniciales del descubrimiento de fármacos: consulta de dianas terapéuticas en ChEMBL y análisis de descriptores fisicoquímicos (regla de Lipinski). Diseñada para reducir el tiempo y los costes en las fases iniciales de I+D farmacéutica.</p>
                     <div class="project-tags"><span>Python</span><span>Streamlit</span><span>RDKit</span><span>ChEMBL API</span><span>Drug Discovery</span></div>
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
-
+ 
         </div>
     </div>
 </div>
-
+ 
 <!-- CONTACTO -->
 <div id="contact">
     <div class="inner">
@@ -220,26 +214,26 @@
             </div>
             <div class="contact-item">
                 <span class="contact-label">LinkedIn</span>
-                <a href="https://www.linkedin.com/in/enriquecarnererobocanegra/" target="_blank" rel="noopener noreferrer">linkedin.com/in/enriquecarnererobocanegra</a>
+                <a href="https://www.linkedin.com/in/enriquecarnererobocanegra/" target="_blank" rel="noopener">www.linkedin.com/in/enriquecarnererobocanegra</a>
             </div>
             <div class="contact-item">
                 <span class="contact-label">GitHub</span>
-                <a href="https://github.com/encarboc02" target="_blank" rel="noopener noreferrer">github.com/encarboc02</a>
+                <a href="https://github.com/encarboc02" target="_blank" rel="noopener">github.com/encarboc02</a>
             </div>
         </div>
     </div>
 </div>
-
-<!-- FOOTER -->
+ 
+<!-- FOOTER / COPYRIGHT -->
 <footer>
-    <p class="footer-copy">© 2026 Enrique Carnerero Bocanegra — Data Analyst & BI en Pharma | Python · R · Power BI</p>
+    <p class="footer-copy">© 2026 Enrique Carnerero Bocanegra - Data Analyst & BI en Pharma | Transformo datos complejos en resultados para la toma de decisiones | Python, R, Power BI</p>
     <div class="footer-links">
         <a href="mailto:enriquecarnererobocanegra@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/enriquecarnererobocanegra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/encarboc02" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/enriquecarnererobocanegra/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/encarboc02" target="_blank" rel="noopener">GitHub</a>
     </div>
 </footer>
-
+ 
 <script src="index.js"></script>
 </body>
 </html>
