@@ -652,66 +652,46 @@ footer {
  
     footer { padding: 24px; flex-direction: column; align-items: flex-start; }
 }
-/* ── FIX COLORES PROFESIONALES ── */
 
-/* texto jerárquico */
-.skill-tag {
-    color: var(--accent) !important;
-}
+/* ── FIX VISUAL LIMPIO ── */
 
-.skill-item p {
-    color: var(--ink-muted) !important;
-}
-
-.skill-item .date {
-    color: rgba(255,255,255,0.5) !important;
-}
+/* jerarquía texto */
+.skill-tag { color: var(--accent); }
+.skill-item p { color: var(--ink-muted); }
+.skill-item .date { color: rgba(255,255,255,0.5); }
 
 /* descripciones */
 .service-card p,
 .project-body p {
-    color: var(--ink-muted) !important;
+    color: var(--ink-muted);
 }
 
-/* números más suaves */
+/* números */
 .service-num,
 .project-num {
-    color: rgba(255,255,255,0.4) !important;
+    color: rgba(255,255,255,0.4);
 }
 
-/* ── TAGS BIEN FORMATEADOS ── */
+/* tags */
 .service-tags span,
 .project-tags span {
     display: inline-block;
     margin: 4px 6px 4px 0;
     padding: 5px 10px;
-
     font-size: 0.65rem;
-    letter-spacing: 0.05em;
-
     background: var(--tag-bg);
     color: var(--ink);
-
     border-radius: 4px;
     border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* hover elegante */
 .service-tags span:hover,
 .project-tags span:hover {
     background: var(--accent);
     color: var(--card-bg);
 }
 
-/* footer más limpio */
-.footer-copy {
-    color: rgba(255,255,255,0.5) !important;
-}
-
-.footer-links a {
-    color: rgba(255,255,255,0.7) !important;
-}
-
-.footer-links a:hover {
-    color: var(--accent) !important;
-}
+/* footer */
+.footer-copy { color: rgba(255,255,255,0.5); }
+.footer-links a { color: rgba(255,255,255,0.7); }
+.footer-links a:hover { color: var(--accent); }
